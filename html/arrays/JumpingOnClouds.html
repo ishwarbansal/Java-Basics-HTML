@@ -1,0 +1,144 @@
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Jumping on Clouds:</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">There is a new mobile game that starts with consecutively numbered clouds. Some of the clouds are thunderheads and others are cumulus. The player can jump on any cumulus cloud having a number that is equal to the number of the current cloud plus&nbsp;<strong>&nbsp;1 or 2.</strong>&nbsp;The player must avoid the thunderheads. Determine the minimum number of jumps it will take to jump from the starting postion to the last cloud. It is always possible to win the game.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">For each game, you will get an array of clouds numbered&nbsp;<strong>0</strong>&nbsp;if they are safe or&nbsp;<strong>1</strong>&nbsp;if they must be avoided.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Example</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">c=[0,1,0,0,0,1,0]</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Index the array from&nbsp;<strong>0....6</strong>&nbsp;The number on each cloud is its index in the list so the player must avoid the clouds at indices&nbsp;<strong>1</strong>&nbsp;and&nbsp;<strong>5</strong>. They could follow these two paths:&nbsp;&nbsp;<strong>0 --&gt; 2 --&gt; 4 --&gt;6</strong>&nbsp;or&nbsp;<strong>0 --&gt; 2 --&gt; 3 --&gt; 4 --&gt;6</strong>. The first path takes&nbsp;<strong>3</strong>&nbsp;jumps while the second takes&nbsp;<strong>4</strong>. Return&nbsp;<strong>3</strong>.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Function Description</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Complete the&nbsp;<em>jumpingOnClouds</em>&nbsp;function in the editor below.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">jumpingOnClouds has the following parameter(s):</span>
+</p>
+<ul type="disc">
+  <li class="MsoNormal" style="color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+                               auto;line-height:normal;mso-list:l1 level1 lfo1;tab-stops:list .5in"><em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">int c[n]</span></em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">: an array of binary integers</span></li>
+</ul>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Returns</span></strong>
+</p>
+<ul type="disc">
+  <li class="MsoNormal" style="color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+                               auto;line-height:normal;mso-list:l0 level1 lfo2;tab-stops:list .5in"><em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">int:</span></em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;the minimum number of jumps required</span></li>
+</ul>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Input Format</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">The first line contains an integer&nbsp;, the total number of clouds. The second line contains&nbsp;<strong>n</strong>&nbsp;space-separated binary integers describing clouds&nbsp;<strong>c[i]</strong>&nbsp;where&nbsp;<strong>0&lt;= i &lt; n</strong>.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Output Format</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Print the minimum number of jumps needed to win the game.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sample Input 0</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">7</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">0 0 1 0 0 1 0</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sample Output 0</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">4</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Explanation 0:</span></strong>
+  <br />
+  <span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">The player must avoid&nbsp;<strong>c[2]</strong>&nbsp;and&nbsp;<strong>c[5]</strong>. The game can be won with a minimum of&nbsp;<strong>4</strong>&nbsp;jumps:</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;; mso-no-proof:yes"><!--[if gte vml 1]><v:shapetype
+id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+<v:stroke joinstyle="miter"/>
+<v:formulas>
+<v:f eqn="if lineDrawn pixelLineWidth 0"/>
+<v:f eqn="sum @0 1 0"/>
+<v:f eqn="sum 0 0 @1"/>
+<v:f eqn="prod @2 1 2"/>
+<v:f eqn="prod @3 21600 pixelWidth"/>
+<v:f eqn="prod @3 21600 pixelHeight"/>
+<v:f eqn="sum @0 0 1"/>
+<v:f eqn="prod @6 1 2"/>
+<v:f eqn="prod @7 21600 pixelWidth"/>
+<v:f eqn="sum @8 21600 0"/>
+<v:f eqn="prod @7 21600 pixelHeight"/>
+<v:f eqn="sum @10 21600 0"/>
+</v:formulas>
+<v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+<o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_7" o:spid="_x0000_i1026" type="#_x0000_t75"
+style='width:154.5pt;height:255.75pt;visibility:visible;mso-wrap-style:square'>
+<v:imagedata src="file:///C:/Users/Bansal/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png"
+o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><!--[endif]--></span><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sample Input 1</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">6</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">0 0 0 0 1 0</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sample Output 1</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">3</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Explanation 1:</span></strong>
+  <br />
+  <span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">The only thundercloud to avoid is&nbsp;<strong>c[4]</strong>. The game can be won in&nbsp;<strong>3</strong>&nbsp;jumps:</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal"><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">static</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> jumpingOnClouds(</span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">[] </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">c</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">) {</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">count</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = 0,</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">n</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">=</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">c</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">.</span><span style="color:#0000c0; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">length</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">for</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> (</span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = 0; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> &lt; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">n</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> - 1; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">++) {</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">if</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> (</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">c</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">[</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">] == 0) </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">++;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">count</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">++;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>System.</span><strong><em><span style="color:#0000c0; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">out</span></em></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">.println(</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">count</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">); </span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">return</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">count</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">;<span style="mso-spacerun:yes">&nbsp;&nbsp; </span></span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">}</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">public</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">static</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">void</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> main(String[] </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">args</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">) {</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><em>jumpingOnClouds</em>(</span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">new</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">[] {0,0,1,0,0,1,0});</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;mso-layout-grid-align:none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">}</span>
+</p>

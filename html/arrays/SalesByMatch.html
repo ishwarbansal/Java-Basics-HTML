@@ -1,0 +1,119 @@
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:15.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sales By Match</span></strong>
+</p>
+<p class="MsoNormal" style="margin-top:3.75pt;margin-right:0in;margin-bottom:
+                            0in;margin-left:0in;mso-line-height-alt:3.0pt;background:white;vertical-align:
+                            baseline"><span style="color:#0e141e; font-family:&quot;var(--font-family-text)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">Alex works at a clothing store. There is a large pile of socks that must be paired by color for sale. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;mso-line-height-alt:3.0pt;
+                            background:white;vertical-align:baseline"><span style="color:#0e141e; font-family:&quot;var(--font-family-text)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">For example, there are&nbsp;&nbsp;n=7 socks with colors&nbsp;ar=[1,2,1,2,1,3,2]. There is one 1 pair of color&nbsp;&nbsp;and one of color 2&nbsp;. There are three odd socks left, one of each color. The number of pairs is&nbsp;2.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;mso-line-height-alt:3.0pt;
+                            background:white;vertical-align:baseline"><strong><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">&nbsp;</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;mso-line-height-alt:3.0pt;
+                            background:white;vertical-align:baseline"><strong><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">Function Description</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;mso-line-height-alt:3.0pt;
+                            background:white;vertical-align:baseline"><span style="color:#0e141e; font-family:&quot;var(--font-family-text)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">Complete the&nbsp;</span><em><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">sockMerchant</span></em><span style="color:#0e141e; font-family:&quot;var(--font-family-text)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;function in the editor below. It must return an integer representing the number of matching pairs of socks that are available.</span>
+</p>
+<p class="MsoNormal" style="margin-top:3.75pt;margin-right:0in;margin-bottom:
+                            0in;margin-left:0in;mso-line-height-alt:3.0pt;background:white;vertical-align:
+                            baseline"><span style="color:#0e141e; font-family:&quot;var(--font-family-text)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">sockMerchant has the following parameter(s):</span>
+</p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+                            margin-left:51.0pt;text-indent:-.25in;mso-line-height-alt:3.0pt;mso-list:l0 level1 lfo1;
+                            tab-stops:list .5in;background:white;vertical-align:baseline"><!--[if !supportLists]--><span style="color:#0e141e; font-family:Symbol; font-size:10.0pt; mso-bidi-font-family:Symbol; mso-bidi-font-size:10.5pt; mso-fareast-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><em><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">n</span></em><span style="color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">: the number of socks in the pile</span>
+</p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:7.5pt;
+                            margin-left:51.0pt;text-indent:-.25in;mso-line-height-alt:3.0pt;mso-list:l0 level1 lfo1;
+                            tab-stops:list .5in;background:white;vertical-align:baseline"><!--[if !supportLists]--><span style="color:#0e141e; font-family:Symbol; font-size:10.0pt; mso-bidi-font-family:Symbol; mso-bidi-font-size:10.5pt; mso-fareast-font-family:Symbol"><span style="mso-list:Ignore">&middot;<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><em><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">ar</span></em><span style="color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">: the colors of each sock</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:7.5pt;mso-line-height-alt:3.0pt;
+                            background:white;vertical-align:baseline"><strong><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">Input Format</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:7.5pt;mso-line-height-alt:3.0pt;
+                            background:white;vertical-align:baseline"><span style="color:#0e141e; font-family:&quot;var(--font-family-text)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">The first line contains an integer&nbsp;, the number of socks represented in&nbsp;.
+  <br />
+  The second line contains&nbsp;&nbsp;space-separated integers describing the colors&nbsp;&nbsp;of the socks in the pile.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            mso-line-height-alt:3.0pt;background:white;vertical-align:baseline"><strong><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">Output Format</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            mso-line-height-alt:3.0pt;background:white;vertical-align:baseline"><span style="color:#0e141e; font-family:&quot;var(--font-family-text)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">Return the total number of&nbsp;</span><em><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">matching pairs</span></em><span style="color:#0e141e; font-family:&quot;var(--font-family-text)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;of socks that Alex can sell.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            mso-line-height-alt:3.0pt;background:white;vertical-align:baseline"><strong><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">Sample Input</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            mso-line-height-alt:3.0pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+                            background:white;vertical-align:baseline"><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;var(--font-family-input)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:&quot;Courier New&quot;; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">9</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            mso-line-height-alt:3.0pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+                            background:white;vertical-align:baseline"><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;var(--font-family-input)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:&quot;Courier New&quot;; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">10 20 20 10 10 30 50 10 20</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            mso-line-height-alt:3.0pt;background:white;vertical-align:baseline"><strong><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">&nbsp;</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            mso-line-height-alt:3.0pt;background:white;vertical-align:baseline"><strong><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;inherit&quot;,serif; font-size:10.5pt; mso-bidi-font-family:Arial; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">Sample Output</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            mso-line-height-alt:3.0pt;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+                            background:white;vertical-align:baseline"><span style="border:none windowtext 1.0pt; color:#0e141e; font-family:&quot;var(--font-family-input)&quot;,serif; font-size:10.5pt; mso-bidi-font-family:&quot;Courier New&quot;; mso-border-alt:none windowtext 0in; mso-fareast-font-family:&quot;Times New Roman&quot;; padding:0in">3</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">public</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">void</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> salesByMatch(</span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">n</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">, </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">[] </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">c</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">) {</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Set&lt;Integer&gt; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">colors</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">new</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> HashSet&lt;&gt;();</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">pairs</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = 0;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">for</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> (</span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = 0; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> &lt; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">n</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">++) {</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">if</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> (!</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">colors</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">.contains(</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">c</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">[</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">])) {</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">colors</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">.add(</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">c</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">[</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">]);</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>} </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">else</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> {</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">pairs</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">++;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">colors</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">.remove(</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">c</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">[</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">]);</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>}</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>System.</span><strong><em><span style="color:#0000c0; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">out</span></em></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">.println(</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">pairs</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">);</span>
+</p>
+<p class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+                            line-height:normal"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">}</span>
+</p>

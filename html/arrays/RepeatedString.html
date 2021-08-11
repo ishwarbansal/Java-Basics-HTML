@@ -1,0 +1,187 @@
+<p class="MsoNormal" style="margin-bottom:0in;margin-top:0in;mso-margin-bottom-alt:
+                            8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;line-height:normal"><strong><span style="background:white; color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Repeated String</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">There is a string,&nbsp;, of lowercase English letters that is repeated infinitely many times. Given an integer,&nbsp;, find and print the number of letter&nbsp;</span><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">a</span><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&#39;s in the first&nbsp;&nbsp;letters of the infinite string.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Example</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">S=abcac</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">N=10</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">The substring we consider is&nbsp;abcacabcac, the first&nbsp;&nbsp;10 characters of the infinite string. There are&nbsp;4 occurrences of&nbsp;</span><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">a</span><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;in the substring.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Function Description</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Complete the&nbsp;<em>repeatedString</em>&nbsp;function in the editor below.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">repeatedString has the following parameter(s):&nbsp;</span>
+</p>
+<ul type="disc">
+  <li class="MsoNormal" style="color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+                               auto;mso-add-space:auto;line-height:normal;mso-list:l0 level1 lfo1;
+                               tab-stops:list .5in"><em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">s:</span></em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;a string to repeat</span></li>
+  <li class="MsoNormal" style="color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+                               auto;mso-add-space:auto;line-height:normal;mso-list:l0 level1 lfo1;
+                               tab-stops:list .5in"><em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">n:</span></em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;the number of characters to consider</span></li>
+</ul>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Returns</span></strong>
+</p>
+<ul type="disc">
+  <li class="MsoNormal" style="color:black;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+                               auto;mso-add-space:auto;line-height:normal;mso-list:l1 level1 lfo2;
+                               tab-stops:list .5in"><em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">int:</span></em><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;the frequency of&nbsp;</span><span style="font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">a</span><span style="font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&nbsp;in the substring</span></li>
+</ul>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Input Format</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">The first line contains a single string,&nbsp;s.
+  <br />
+  The second line contains an integer,&nbsp;n.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sample Input</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sample Input 0</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">aba</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">10</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sample Output 0</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">7</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Explanation 0</span></strong>
+  <br />
+  <span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">The first&nbsp;n=10&nbsp;letters of the infinite string are&nbsp;</span><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">abaabaabaa</span><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">. Because there are&nbsp;7&nbsp;</span><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">a</span><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">&#39;s, we 7 return&nbsp;.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sample Input 1</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">a</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">1000000000000</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Sample Output 1</span></strong>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">1000000000000</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:0in;margin-top:0in;
+                            mso-margin-bottom-alt:8.0pt;mso-margin-top-alt:0in;mso-add-space:auto;
+                            line-height:normal;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt"><strong><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Explanation 1</span></strong>
+  <br />
+  <span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">Because all of the first&nbsp;&nbsp;n=</span><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">1000000000000 </span><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">letters of the infinite string are&nbsp;</span><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">a</span><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">, we return&nbsp;</span><span style="color:black; font-family:&quot;Courier New&quot;; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">1000000000000</span><span style="color:black; font-family:&quot;Arial&quot;,sans-serif; font-size:12.0pt; mso-fareast-font-family:&quot;Times New Roman&quot;">.</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">static</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">long</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> repeatedString(String </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">s</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">, </span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">long</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">n</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">) {</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">long</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">size</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">s</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">.length(), </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">repeated</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">n</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">/</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">size</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">long</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">left</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">n</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> - (</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">size</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> * </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">repeated</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">);</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">extra</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = 0;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">count</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = 0;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">for</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">(</span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = 0; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> &lt; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">size</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">++){</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">if</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">(</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">s</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">.charAt(</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">) == </span><span style="color:#2a00ff; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&#39;a&#39;</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">){</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>++</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">count</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">for</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">(</span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">int</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = 0; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> &lt; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">left</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">; </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">++){</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">if</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">(</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">s</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">.charAt(</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">i</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">) == </span><span style="color:#2a00ff; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&#39;a&#39;</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">){</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>++</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">extra</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">repeated</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> = (</span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">repeated</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> * </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">count</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">) + </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">extra</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">&nbsp;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><strong><span style="color:#7f0055; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">return</span></strong><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas"> </span><span style="color:#6a3e3e; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">repeated</span><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">;</span>
+</p>
+<p class="MsoNormal" style="margin-bottom:0in;line-height:normal;mso-layout-grid-align:
+                            none;text-autospace:none"><span style="color:black; font-family:Consolas; font-size:10.0pt; mso-bidi-font-family:Consolas">}</span>
+</p>
